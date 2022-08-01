@@ -1,9 +1,9 @@
 const mongoose = require('mongoose');
 
 const employeesSchema = mongoose.Schema({
-  firstName: { type: String, require: true },
-  lastName: { type: String, require: true },
-  department: { type: String, require: true, ref: 'Department' },
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  department: { type: String, required: true, ref: 'Department' },
 });
 
-mongoose.model('Employee', employeesSchema);
+module.exports = mongoose.model('Employee', employeesSchema);
