@@ -17,7 +17,7 @@ describe('POST /api/departments', () => {
       name: 'Test Department One',
     });
     expect(res.status).to.equal(200);
-    expect(res.body.message).to.be.equal('OK');
+    expect(res.body.message).to.be.equal('Ok');
     expect(newDepartment.name).to.equal('Test Department One');
   });
   after(async () => {
