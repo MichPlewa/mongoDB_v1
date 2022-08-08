@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const Control = require('../controllers/employee.controller');
 
-router.get('/employees', Contorl.getAll);
+router.get('/employees', Control.getAll);
 
 router.get('/employees/random', Control.getRandom);
 
